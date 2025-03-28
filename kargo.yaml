@@ -1,0 +1,23 @@
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Project
+metadata:
+  name: hello-world
+spec:
+  promotionPolicies:
+    - stage: testing
+      autoPromotionEnabled: true
+---
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Warehouse
+metadata:
+  name: main
+  namespace: hello-world
+spec:
+  interval: "5m0s"
+  subscriptions:
+  - image:
+      imageSelectionStrategy: NewestBuild
+      repoURL: example.azurecr.io/hello-world
+      discoveryLimit: 10
+      strictSemvers: false
+
