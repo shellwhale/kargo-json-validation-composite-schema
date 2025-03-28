@@ -159,6 +159,9 @@
           "spec"
         ],
         "type": "object"
+      },
+      "else": {
+        "not": {}
       }
     },
     {
@@ -364,6 +367,9 @@
           "origin"
         ],
         "type": "object"
+      },
+      "else": {
+        "not": {}
       }
     },
     {
@@ -495,6 +501,9 @@
           }
         },
         "type": "object"
+      },
+      "else": {
+        "not": {}
       }
     },
     {
@@ -1092,6 +1101,9 @@
           "spec"
         ],
         "type": "object"
+      },
+      "else": {
+        "not": {}
       }
     },
     {
@@ -1253,6 +1265,9 @@
           "spec"
         ],
         "type": "object"
+      },
+      "else": {
+        "not": {}
       }
     },
     {
@@ -3014,6 +3029,9 @@
           "spec"
         ],
         "type": "object"
+      },
+      "else": {
+        "not": {}
       }
     },
     {
@@ -3514,6 +3532,9 @@
           "spec"
         ],
         "type": "object"
+      },
+      "else": {
+        "not": {}
       }
     }
   ]
